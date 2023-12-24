@@ -2,8 +2,11 @@ const asyncWrapper = require("../middleWare/asyncWrapper");
 const userModel = require("../model/userModel");
 const jwt = require("jsonwebtoken");
 const ErrorHandler = require("../utils/errorHandler");
+const crypto = require("crypto");
 
 
+const jwtSecret = crypto.randomBytes(32).toString('hex');
+console.log('Generated JWT_SECRET:', jwtSecret);
 
 exports.isAuthentictedUser = asyncWrapper(async (req , res , next) =>{
     const { token } = req.cookies; 
@@ -13,7 +16,7 @@ if(!token){
 }
 
 // now verify that token with seceret key . 
-    const deCodeToken = jwt.verify(token, process.env.JWT_SECRET);
+    const deCodeToken = jwt.verify(token, process.env.JWT_SECRET) || jwtSecret;
 
     // now get user id from deCodeToken because when we make token in userSchema so we added userID in payLoad section. with that id get user and store inside req object .
 

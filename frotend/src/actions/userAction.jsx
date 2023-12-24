@@ -67,6 +67,7 @@ export function signUp(signupData) {
 
   return async function (dispatch) {
     try {
+      console.log("In UserAction SignUp")
       dispatch({ type: REGISTER_USER_REQUEST });
       const config = {
         headers: { "Content-Type": "multipart/form-data" },

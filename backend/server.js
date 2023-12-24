@@ -13,7 +13,7 @@ process.on("uncaughtException" , (err) =>{
 
 
 //config =>
- dotenv.config({path : "backend/config/config.env"})
+ dotenv.config({path : "backend/config/.env"})
 // Connect With MongoDB
 connectDB();
 

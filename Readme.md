@@ -17,13 +17,13 @@ https://github.com/MehraDevesh2022/CricketWeapon-Store/assets/96515074/d8eb6147-
 
 ### Admin Area
 https://github.com/MehraDevesh2022/CricketWeapon-Store/assets/96515074/bfc07258-0a0a-4840-b277-25dceafb4795
-
+<!-- 
 ## Dummy User Accounts
 
 | Email (Normal User) | Password | Email (Admin)     | Password  |
 | ------------------- | -------- | ----------------- | --------- |
 | user2@gmail.com     | user1234 | admin@gmail.com   | admin@123 |
-| user3@gmail.comm    | user1234 | admin01@gmail.com | user1234  |
+| user3@gmail.comm    | user1234 | admin01@gmail.com | user1234  | -->
 
 ## Tech Stack
 
@@ -68,7 +68,7 @@ https://github.com/MehraDevesh2022/CricketWeapon-Store/assets/96515074/bfc07258-
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/MehraDevesh2022/CricketWeapon-Store.git
+    git clone https://github.com/Kavin1421/Cricket-Shop.git
     cd CricketWeapon-Store
     ```
 2.  Install dependencies:
@@ -317,7 +317,7 @@ This guide will walk you through the process of hosting your complete MERN stack
 
 | Contributor                                           |
 | ----------------------------------------------------- |
-| [ImgBotApp](https://github.com/ImgBotApp)             |
-| [MehraDevesh2022](https://github.com/MehraDevesh2022) |
-| [0dayhunter](https://github.com/MehraDevesh2022) |
+| [Kavinkumar](https://github.com/Kavin1421)             |
+<!-- | [MehraDevesh2022](https://github.com/MehraDevesh2022) |
+| [0dayhunter](https://github.com/MehraDevesh2022) | -->
 

@@ -132,6 +132,7 @@ function Signup() {
     formData.set("password", password);
     formData.set("avatar", avatar);
 
+    console.log(formData)
     dispatch(signUp(formData));
     setLoading(false);
   }

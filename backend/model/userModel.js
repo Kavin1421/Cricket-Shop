@@ -4,6 +4,9 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 
+const jwtSecret = crypto.randomBytes(32).toString('hex');
+console.log('Generated JWT_SECRET:', jwtSecret);
+
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -63,8 +66,9 @@ userSchema.pre("save", async function (next) {
 // making method using Mongoose method property => getJWTToken
 userSchema.methods.getJWTToken = function () {
   // we sending in payLoad : Toeknexpiry , userId , or Seceret key, Along with header has algo name , type of JWT
-  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+  return jwt.sign({ id: this._id }, process.env.JWT_SECRET || jwtSecret, {
     expiresIn: process.env.JWT_EXPIRE,
+    expiresIn: process.env.jwtSecret
   });
 };
 
