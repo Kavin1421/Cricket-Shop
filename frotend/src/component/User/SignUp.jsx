@@ -56,6 +56,9 @@ function Signup() {
       alert.success("User Registered Successfully");
       history.push("/account");
     }
+    else{
+      console.log("Solamutha pocha");
+    }
   }, [dispatch, isAuthenticated, loading, error, alert , history]);
 
   const handleEmailChange = (event) => {

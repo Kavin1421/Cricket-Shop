@@ -3,7 +3,7 @@
 const sendJWtToken  = (user , statusCode , res) =>{
    
 
-;
+
     const token = user.getJWTToken(); //every user has access all userModel methods
 
      // options for cookie

@@ -15,7 +15,7 @@ exports.registerUser = asyncWrapper(async (req, res) => {
     crop: "scale",
   });
 
-
+console.log('varuthu');
 
   const { name, email, password } = req.body;
   const user = await userModel.create({
@@ -27,7 +27,6 @@ exports.registerUser = asyncWrapper(async (req, res) => {
       url: myCloud.secure_url,
     },
   });
-
   // sending the res and staus code along with token using sendJWtToken method
   sendJWtToken(user, 201, res);
 });
