@@ -68,7 +68,7 @@ userSchema.methods.getJWTToken = function () {
   // we sending in payLoad : Toeknexpiry , userId , or Seceret key, Along with header has algo name , type of JWT
   return jwt.sign({ id: this._id }, process.env.JWT_SECRET || jwtSecret, {
     expiresIn: process.env.JWT_EXPIRE,
-    expiresIn: process.env.jwtSecret
+    expiresIn: jwtSecret
   });
 };
 

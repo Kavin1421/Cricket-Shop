@@ -76,6 +76,7 @@ export function signUp(signupData) {
       const { data } = await axios.post(
         `/api/v1/register`,
         signupData,
+        // console.log(config),
         config
       );
 
